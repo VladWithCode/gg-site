@@ -5,15 +5,31 @@ function Footer() {
 	return (
 		<div className="w-full p-5">
 			<ContactForm />
-			<ul className="flex flex-col gap-y-2 mt-10 text-rose-950">
+			<ul className="flex flex-col gap-y-2 my-10 text-rose-950">
 				<li>
 					<Link href="#start">Inicio</Link>
 				</li>
 				<li>
-					<Link href="#sites">Nuestro trabajo</Link>
+					<Link href="#sites">Portafolio</Link>
 				</li>
 				<li>
 					<Link href="#sites">Sobre nosotros</Link>
+				</li>
+				<li>
+					<Link href="#service">Nuestro servcio</Link>
+				</li>
+			</ul>
+			<hr className="mx-5 border-rose-200" />
+			<ul className="flex gap-x-2 pt-2 text-rose-950 text-[10px]">
+				<li>
+					<Link href="/terminos-y-condiciones">
+						Terminos y Condiciones
+					</Link>
+				</li>
+				<li>
+					<Link href="/Politica de privacidad">
+						Politica de privacidad
+					</Link>
 				</li>
 			</ul>
 		</div>
