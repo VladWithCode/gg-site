@@ -32,7 +32,9 @@ const sites = [
 
 export default function Home() {
 	return (
-		<div className="relative min-h-screen w-full overflow-x-hidden overflow-y-auto ">
+		<div
+			className="relative min-h-screen w-full overflow-x-hidden overflow-y-auto"
+			id="start">
 			<div className="max-w-[1400px] shadow-content shadow-slate-300 mx-auto">
 				<section className="pt-40 pb-12 px-5 w-full bg-purple-200 text-rose-900 lg:px-20 lg:pt-96">
 					<h1 className="text-5xl mb-16 lg:text-8xl">
@@ -61,7 +63,7 @@ export default function Home() {
 
 function Gallery({ sitesData }) {
 	return (
-		<div className="py-5 flex flex-col items-center gap-y-12">
+		<div className="py-5 flex flex-col items-center gap-y-12" id="sites">
 			{sitesData.map(site => (
 				<SiteCard {...site} key={site.link} />
 			))}
