@@ -20,7 +20,8 @@ function Navbar() {
 						Marketing
 					</Link>
 				</div>
-				<div className="basis-1/2">
+				<div className="w-0 lg:w-auto"></div>
+				<div className="basis-1/2 overflow-hidden lg:w-0">
 					<div className="ml-auto w-min space-y-1">
 						<span className="block w-8 h-1 bg-fuchsia-950"></span>
 						<span className="block w-8 h-1 bg-fuchsia-950"></span>

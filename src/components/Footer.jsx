@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -5,20 +6,29 @@ function Footer() {
 	return (
 		<div className="w-full p-5">
 			<ContactForm />
-			<ul className="flex flex-col gap-y-2 my-10 text-rose-950">
-				<li>
-					<Link href="#start">Inicio</Link>
-				</li>
-				<li>
-					<Link href="#sites">Portafolio</Link>
-				</li>
-				<li>
-					<Link href="#sites">Sobre nosotros</Link>
-				</li>
-				<li>
-					<Link href="#service">Nuestro servcio</Link>
-				</li>
-			</ul>
+			<div className="flex justify-between my-10">
+				<ul className="basis-1/2 flex flex-col gap-y-2 text-rose-950">
+					<li>
+						<Link href="#start">Inicio</Link>
+					</li>
+					<li>
+						<Link href="#sites">Portafolio</Link>
+					</li>
+					<li>
+						<Link href="#sites">Sobre nosotros</Link>
+					</li>
+					<li>
+						<Link href="#service">Nuestro servcio</Link>
+					</li>
+				</ul>
+				<Image
+					className="w-16 h-8"
+					src="/img/gg_logo.png"
+					width={128}
+					height={60}
+					alt="logo"
+				/>
+			</div>
 			<hr className="mx-5 border-rose-200" />
 			<ul className="flex gap-x-2 pt-2 text-rose-950 text-[10px]">
 				<li>
