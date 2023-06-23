@@ -15,6 +15,9 @@ module.exports = {
 			width: {
 				navbar: 'calc(100% - 20px)',
 			},
+			boxShadow: {
+				content: '0px 0px 80px -5px',
+			},
 		},
 	},
 	plugins: [],
